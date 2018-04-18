@@ -12,3 +12,5 @@ CREATE TABLE Account (
     accd DATE,
     login_count INT
 );
+
+INSERT INTO Account (u_name, p_word, email, accd) VALUES ("prufa", "prufushiss", "prufu@email.is", "2005-12-24")
