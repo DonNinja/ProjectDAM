@@ -68,14 +68,14 @@ namespace FORR3N_ProjectDAM
             }
         }
 
-        public List<string> LesautSQLToflu()
+        public List<string> LesautSQLTofluBasic(string uname, string pword)
         {
             List<string> faerslur = new List<string>();
             string lina = null;
             if (OpenConnection() == true)
             {
                 //fyrirspurn = "SELECT license_plate, year_built, brand, price, owner_name FROM cars";
-                fyrirspurn = "SELECT u_name, p_word, email, accd FROM account";
+                fyrirspurn = "SELECT u_name, p_word, email, accd FROM account WHERE u_name = '" + uname + "' AND p_word = '" + pword + "'";
                 nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 //ExecuteReader: Used to execute a command that will return 0 or more records
                 sqllesari = nySQLskipun.ExecuteReader();
@@ -92,6 +92,41 @@ namespace FORR3N_ProjectDAM
                 return faerslur;
             }
             return faerslur;
+        }
+
+        public bool LogIn(string usern, string passw)
+        {
+            List<string> faerslur = new List<string>();
+            string lina = null;
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "SELECT * FROM account WHERE u_name = '" + usern + "' AND p_word = '" + passw + "'";
+                nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                sqllesari = nySQLskipun.ExecuteReader();
+                while (sqllesari.Read())
+                {
+                    for (int i = 0; i < sqllesari.FieldCount; i++)
+                    {
+                        lina += (sqllesari.GetValue(i).ToString()) + ":";
+                    }
+                    faerslur.Add(lina);
+                    lina = null;
+                }
+                CloseConnection();
+                if (faerslur.Count == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Connection failed");
+                return false;
+            }
         }
     }
 }
