@@ -128,5 +128,38 @@ namespace FORR3N_ProjectDAM
                 return false;
             }
         }
+
+        public void LoggedIn(string usern, string passw)
+        {
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "UPDATE account SET login_count = login_count + 1 WHERE u_name = '" + usern + "' AND p_word = '" + passw + "'";
+                nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                nySQLskipun.ExecuteNonQuery();
+                CloseConnection();
+            }
+        }
+
+        public void NewUser(string usern, string passw, string email)
+        {
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "INSERT INTO account(u_name, p_word, email, accd, login_count) VALUES ('" + usern + "', '" + passw + "', '" + email + "', NOW(), 0)";
+                nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                nySQLskipun.ExecuteNonQuery();
+                CloseConnection();
+            }
+        }
+
+        public void UpdateUser(string newusern, string newpassw, string newemail, string oldusern, string oldpassw, string oldemail)
+        {
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "UPDATE account SET u_name = '" + newusern + "', p_word = '" + newpassw + "', email = '" + newemail + "' WHERE u_name = '" + oldusern + "' AND p_word = '" + oldpassw + "' AND email = '" + oldemail + "'";
+                nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                nySQLskipun.ExecuteNonQuery();
+                CloseConnection();
+            }
+        }
     }
 }

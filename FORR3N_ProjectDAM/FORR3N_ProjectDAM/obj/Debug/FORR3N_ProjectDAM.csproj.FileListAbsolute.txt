@@ -1,7 +1,6 @@
 H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\bin\Debug\FORR3N_ProjectDAM.exe.config
 H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\bin\Debug\FORR3N_ProjectDAM.exe
 H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\bin\Debug\FORR3N_ProjectDAM.pdb
-H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\bin\Debug\MySql.Data.dll
 H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.csprojResolveAssemblyReference.cache
 H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.Form1.resources
 H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.Properties.Resources.resources
@@ -9,3 +8,16 @@ H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3
 H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.exe
 H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.pdb
 H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.account.resources
+H:\FORR3NÞ05DU\Lokaverkefni\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.NewUser.resources
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\bin\Debug\FORR3N_ProjectDAM.exe.config
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\bin\Debug\FORR3N_ProjectDAM.exe
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\bin\Debug\FORR3N_ProjectDAM.pdb
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.csprojResolveAssemblyReference.cache
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.account.resources
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.Form1.resources
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.NewUser.resources
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.Properties.Resources.resources
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.csproj.GenerateResource.Cache
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.csproj.CoreCompileInputs.cache
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.exe
+E:\Everything\School_athome\FORR3NÞ05DU\ProjectDAM\FORR3N_ProjectDAM\FORR3N_ProjectDAM\obj\Debug\FORR3N_ProjectDAM.pdb

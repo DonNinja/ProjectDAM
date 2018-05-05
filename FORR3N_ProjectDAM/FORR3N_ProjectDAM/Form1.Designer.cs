@@ -34,6 +34,7 @@
             this.tbPass = new System.Windows.Forms.TextBox();
             this.btSignIn = new System.Windows.Forms.Button();
             this.lbConnSucc = new System.Windows.Forms.Label();
+            this.btNewUser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -70,9 +71,9 @@
             // 
             // btSignIn
             // 
-            this.btSignIn.Location = new System.Drawing.Point(62, 164);
+            this.btSignIn.Location = new System.Drawing.Point(12, 150);
             this.btSignIn.Name = "btSignIn";
-            this.btSignIn.Size = new System.Drawing.Size(192, 74);
+            this.btSignIn.Size = new System.Drawing.Size(156, 74);
             this.btSignIn.TabIndex = 4;
             this.btSignIn.Text = "Sign in";
             this.btSignIn.UseVisualStyleBackColor = true;
@@ -88,11 +89,22 @@
             this.lbConnSucc.TabIndex = 5;
             this.lbConnSucc.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // btNewUser
+            // 
+            this.btNewUser.Location = new System.Drawing.Point(179, 150);
+            this.btNewUser.Name = "btNewUser";
+            this.btNewUser.Size = new System.Drawing.Size(156, 74);
+            this.btNewUser.TabIndex = 6;
+            this.btNewUser.Text = "Create new user\r\n(Opens another form)";
+            this.btNewUser.UseVisualStyleBackColor = true;
+            this.btNewUser.Click += new System.EventHandler(this.btNewUser_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 290);
+            this.ClientSize = new System.Drawing.Size(347, 244);
+            this.Controls.Add(this.btNewUser);
             this.Controls.Add(this.lbConnSucc);
             this.Controls.Add(this.btSignIn);
             this.Controls.Add(this.tbPass);
@@ -115,6 +127,7 @@
         private System.Windows.Forms.Label lbConnSucc;
         public System.Windows.Forms.TextBox tbUsern;
         public System.Windows.Forms.TextBox tbPass;
+        private System.Windows.Forms.Button btNewUser;
 
 
     }

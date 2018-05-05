@@ -14,15 +14,20 @@ namespace FORR3N_ProjectDAM
     {
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
 
-        Form1 form1 = new Form1();
-
-
         /*Þetta er listinn sem lesinn er upp úr gagnagrunninum*/
         List<string> linur = new List<string>();
 
-        public account()
+
+        private void account_Load(object sender, EventArgs e)
+        {
+            SkrifaUt();
+        }
+
+        public account(string usern, string passw)
         {
             InitializeComponent();
+            tbReadUser.Text = usern;
+            tbReadPass.Text = passw;
 
             try
             {
@@ -48,10 +53,9 @@ namespace FORR3N_ProjectDAM
             /*Þetta heldur utam um itemin sem eru bætt við í hverja línu í listviewinu*/
             ListViewItem itm;
 
-
             try
             {
-                linur = gagnagrunnur.LesautSQLTofluBasic(tbTakenUser.Text, tbTakenPass.Text);
+                linur = gagnagrunnur.LesautSQLTofluBasic(tbReadUser.Text, tbReadPass.Text);
 
                 foreach (string lin in linur)
                 {
@@ -71,6 +75,10 @@ namespace FORR3N_ProjectDAM
                     /*sett inn í ListViewItemið og bætt svo inn í listView-ið*/
                     itm = new ListViewItem(arr);
                     listView1.Items.Add(itm);
+
+                    tbOldUser.Text = u_name;
+                    tbOldPass.Text = p_word;
+                    tbOldEmail.Text = email;
                 }
             }
             catch (Exception ex)
@@ -79,13 +87,14 @@ namespace FORR3N_ProjectDAM
             }
         }
 
-
-        private void account_Load(object sender, EventArgs e)
+        private void btUpdate_Click(object sender, EventArgs e)
         {
-            SkrifaUt();
+            tbReadUser.Text = tbNewUser.Text;
+            tbReadPass.Text = tbNewPass.Text;
+            gagnagrunnur.UpdateUser(tbNewUser.Text, tbNewPass.Text, tbNewEmail.Text, tbOldUser.Text, tbOldPass.Text, tbOldEmail.Text);
+            listView1.Clear();
 
-            tbTakenUser.Text = form1.tbUsern.Text;
-            tbTakenPass.Text = form1.tbUsern.Text;
+            SkrifaUt();
         }
     }
 }
